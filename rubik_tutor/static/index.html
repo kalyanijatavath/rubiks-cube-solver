@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rubik's Cube Tutor</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>Rubik's Cube Tutor</h1>
+  <p class="sub">Show your cube to the camera (or enter it by hand) and learn to solve it step by step.
+     Every move comes from a verified solver; the AI only explains.</p>
+  <span id="llmBadge" class="badge">checking…</span>
+</header>
+
+<main>
+  <!-- ============================ SETUP ============================ -->
+  <section id="setup">
+    <div class="tabs" role="tablist">
+      <button id="tabCamera" class="tab active">Scan with camera</button>
+      <button id="tabManual" class="tab">Enter / edit colours</button>
+      <button id="btnDemo" class="tab">Random scramble (no cube needed)</button>
+    </div>
+
+    <div id="cameraPane" class="card">
+      <p id="scanPrompt" class="prompt">Press “Start camera”. Hold the cube with your first-layer colour
+         (white) on the <b>bottom</b>.</p>
+      <div class="camWrap">
+        <video id="video" playsinline muted></video>
+        <div class="gridOverlay"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="row">
+        <button id="btnStartCam">Start camera</button>
+        <button id="btnCapture" disabled>Capture face</button>
+        <button id="btnRestartScan" class="ghost" disabled>Restart scan</button>
+      </div>
+      <p id="scanProgress" class="muted"></p>
+    </div>
+
+    <div id="netPane" class="card" hidden>
+      <h2>Your cube <span class="muted">(click a colour, then click stickers to fix mistakes)</span></h2>
+      <div class="palette" id="palette"></div>
+      <div id="netEdit" class="net"></div>
+      <p id="counts" class="muted"></p>
+      <p id="setupMsg" class="msg"></p>
+      <div class="row">
+        <button id="btnSolveBeginner" disabled>Teach me (beginner method)</button>
+        <button id="btnSolveFast" class="ghost" disabled>Fast solution (no teaching)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ LEARN ============================ -->
+  <section id="learn" hidden>
+    <div class="grid2">
+      <div class="card">
+        <h2>Current cube</h2>
+        <p class="muted">Keep the cube in the orientation you scanned it: first-layer colour (white) on the <b>bottom</b>, the face you called Front toward you (green for the demo). Highlighted stickers show the face to turn next.</p>
+        <div id="netLearn" class="net"></div>
+        <div class="row">
+          <button id="btnPrev" class="ghost">◀ Back</button>
+          <button id="btnNext">Next move ▶</button>
+        </div>
+        <p id="progressText" class="muted"></p>
+      </div>
+
+      <div class="card">
+        <ol id="stageList" class="stages"></ol>
+        <div id="stepCard">
+          <h3 id="stepTitle"></h3>
+          <div id="moveChips" class="chips"></div>
+          <p id="stepText"></p>
+          <div class="row">
+            <button id="btnExplain" class="ghost">Explain this step</button>
+            <button id="btnCheck" class="ghost">Check my cube (scan)</button>
+          </div>
+          <p id="explainOut" class="explain"></p>
+        </div>
+
+        <div class="ask">
+          <input id="askInput" placeholder="Ask anything… e.g. what does R' mean?" maxlength="200">
+          <button id="btnAsk">Ask</button>
+          <p id="askOut" class="explain"></p>
+        </div>
+
+        <details class="wrong">
+          <summary>I did a different move</summary>
+          <select id="wrongMove"></select>
+          <button id="btnWrong" class="ghost">Re-plan from my cube</button>
+        </details>
+        <p id="checkMsg" class="msg"></p>
+        <button id="btnReplan" class="ghost" hidden>Re-plan from my cube</button>
+        <button id="btnReset" class="ghost">Start over with another cube</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Moves come from a simulator-verified solver. Colours are read on your device and only the
+  colour numbers (no images) are sent to the server.
+</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
