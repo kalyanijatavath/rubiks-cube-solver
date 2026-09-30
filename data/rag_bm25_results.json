@@ -1,0 +1,56 @@
+{
+  "n": 40,
+  "hit@1": 0.825,
+  "hit@3": 0.9,
+  "misses": [
+    {
+      "question": "How does the tutor decide that the first two layers are finished?",
+      "gold": "n04_overview",
+      "got": [
+        "n07_middle"
+      ]
+    },
+    {
+      "question": "How do I know my white cross is right?",
+      "gold": "n05_cross",
+      "got": [
+        "n08_topcross"
+      ]
+    },
+    {
+      "question": "How do I bring a white edge down to the bottom layer?",
+      "gold": "n05_cross",
+      "got": [
+        "n06_corners"
+      ]
+    },
+    {
+      "question": "How do I finish the last step and permute the top edges?",
+      "gold": "n11_edge_perm",
+      "got": [
+        "n07_middle"
+      ]
+    },
+    {
+      "question": "How does the scanner decide a sticker's color?",
+      "gold": "n13_scan",
+      "got": [
+        "n02_anatomy"
+      ]
+    },
+    {
+      "question": "Can a scrambled cube have exactly two swapped pieces?",
+      "gold": "n14_invalid",
+      "got": [
+        "n02_anatomy"
+      ]
+    },
+    {
+      "question": "How can I turn faster without mistakes?",
+      "gold": "n15_technique",
+      "got": [
+        "n12_mistakes"
+      ]
+    }
+  ]
+}

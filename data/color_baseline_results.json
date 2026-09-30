@@ -1,0 +1,28 @@
+{
+  "fixed_nominal": {
+    "all": 94.68,
+    "dim(<0.7)": 80.6,
+    "mid": 98.85,
+    "bright(>1.1)": 99.17,
+    "no_glare": 94.72,
+    "glare": 93.73
+  },
+  "centre_reference": {
+    "all": 99.55,
+    "dim(<0.7)": 98.9,
+    "mid": 99.83,
+    "bright(>1.1)": 99.56,
+    "no_glare": 99.85,
+    "glare": 92.57
+  },
+  "centre_reference+count_constraint": {
+    "all": 99.98,
+    "dim(<0.7)": 99.91,
+    "mid": 100.0,
+    "bright(>1.1)": 100.0,
+    "no_glare": 99.98,
+    "glare": 100.0
+  },
+  "_n_scans": 400,
+  "_note": "synthetic data; accuracy on the 48 non-centre stickers per scan"
+}

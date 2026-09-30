@@ -1,0 +1,18 @@
+{
+  "scrambles": 500,
+  "all_solved": true,
+  "moves_mean": 151.2,
+  "moves_min": 88,
+  "moves_max": 213,
+  "moves_per_stage_mean": {
+    "1: Build the bottom cross": 5.8,
+    "2: Place the bottom corners": 44.6,
+    "3: Place the middle-layer edges": 41.8,
+    "4: Make the top cross": 10.1,
+    "5: Orient the top corners": 17.2,
+    "6: Position the top corners": 14.5,
+    "7: Position the top edges": 17.2
+  },
+  "solve_seconds_mean": 0.052,
+  "solve_seconds_max": 0.162
+}

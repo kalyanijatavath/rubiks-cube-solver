@@ -1,0 +1,63 @@
+{
+  "n_notes": 16,
+  "n_questions": 40,
+  "tfidf_hit@1": 0.725,
+  "tfidf_hit@3": 0.8,
+  "top1_misses": [
+    {
+      "question": "What does the 2 mean in a move like U2?",
+      "gold": "n01_notation",
+      "got": "n16_solved"
+    },
+    {
+      "question": "Why can't I flip just one edge?",
+      "gold": "n02_anatomy",
+      "got": "n05_cross"
+    },
+    {
+      "question": "Which color should be on the bottom while I learn?",
+      "gold": "n03_frame",
+      "got": "n15_technique"
+    },
+    {
+      "question": "How do I know my white cross is right?",
+      "gold": "n05_cross",
+      "got": "n08_topcross"
+    },
+    {
+      "question": "How do I bring a white edge down to the bottom layer?",
+      "gold": "n05_cross",
+      "got": "n07_middle"
+    },
+    {
+      "question": "What algorithm places the bottom corners?",
+      "gold": "n06_corners",
+      "got": "n10_corner_perm"
+    },
+    {
+      "question": "I have no yellow corners on top. How do I start?",
+      "gold": "n09_orient",
+      "got": "n10_corner_perm"
+    },
+    {
+      "question": "How do I finish the last step and permute the top edges?",
+      "gold": "n11_edge_perm",
+      "got": "n03_frame"
+    },
+    {
+      "question": "How does the tutor figure out which move I made?",
+      "gold": "n12_mistakes",
+      "got": "n04_overview"
+    },
+    {
+      "question": "How does the scanner decide a sticker's color?",
+      "gold": "n13_scan",
+      "got": "n02_anatomy"
+    },
+    {
+      "question": "How can I turn faster without mistakes?",
+      "gold": "n15_technique",
+      "got": "n12_mistakes"
+    }
+  ]
+}
