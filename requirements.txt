@@ -1,6 +1,0 @@
-flask>=3.0
-kociemba>=1.2.1
-numpy>=1.26
-scipy>=1.11
-gunicorn>=21.2
-anthropic>=0.40      # optional: only used when ANTHROPIC_API_KEY is set
