@@ -1,2 +1,0 @@
-{ "name": "rubik-tutor-frontend-smoke", "private": true, "type": "module",
-  "scripts": { "smoke": "node smoke.mjs" }, "devDependencies": { "jsdom": "^24.0.0" } }
