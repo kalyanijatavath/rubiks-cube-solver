@@ -1,3 +1,0 @@
--r requirements.txt
-pytest>=8.0
-scikit-learn>=1.4    # only for scripts/gen_rag.py (TF-IDF baseline)
