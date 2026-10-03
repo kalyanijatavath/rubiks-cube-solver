@@ -2,6 +2,8 @@
 
 A browser-based Rubik's Cube solver built with Next.js. Point your webcam at each face of a scrambled cube, let an on-device ML model read the sticker colours, fix any mistakes by hand, and get a step-by-step solution that plays back on an interactive 3D cube.
 
+**Live demo:** [rubikscubesolver3d.netlify.app](https://rubikscubesolver3d.netlify.app/)
+
 ## Features
 
 - **Webcam scanning** – guided capture of all six faces (front → right → back → left → up → down) with orientation hints for each step. Works with front or rear camera.
@@ -77,6 +79,8 @@ netlify.toml              # Netlify build config
 ```
 
 ## Deployment
+
+The app is live on Netlify at https://rubikscubesolver3d.netlify.app/.
 
 The repo includes `netlify.toml` for Netlify: connect the repository, keep the build command `npm run build`, and the Next.js plugin handles the rest. It can also be deployed to Vercel with no extra configuration.
 
