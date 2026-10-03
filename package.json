@@ -1,0 +1,39 @@
+{
+  "name": "rubiks-cube-solver_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@netlify/plugin-nextjs": "^5.15.9",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@tensorflow/tfjs": "^4.22.0",
+    "cube-solver": "^2.4.1",
+    "fs": "^0.0.1-security",
+    "kociemba": "^1.0.1",
+    "next": "16.1.6",
+    "onnxruntime-web": "^1.24.3",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-webcam": "^7.2.0",
+    "rubik-cube-solver": "^0.1.0",
+    "rubiks-cube-solver": "^1.2.0",
+    "three": "^0.183.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
